@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+    	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+            <script type="text/javascript" src="https://code.responsivevoice.org/responsivevoice.js"></script>
+</head>
+
+<style type="text/css">
+	.p1 {
+  font-family: "Times New Roman", Times, serif;
+}
+    body {
+      background: #1e2440;
+      color: #f2efe2;
+      font-size: 16px;
+    }
+h1 {
+  background-color: #1e2440;
+  font-family: Verdana, sans-serif;
+  color: white; 
+  border: 20px; 
+}
+
+</style>
+    <body>
+        
+
+        
+
+        <div>
+        	<br><br><br><br>
+  <center><h1>Text to Speech conversion using JavaScript by Group G2</h1></center>
+        </div>
+
+        <div >
+
+<br><br>
+       <center> <textarea id="txt" cols="100" rows="10" class="p1"></textarea> </center>
+       <br> <br> <br>
+
+        <center> 
+            <button type="button" class="btn btn-info" onclick="speakText()" style="margin: 50px;">Read</button> 
+        </center>
+        <br>
+
+   
+
+        </div>
+
+        <script>
+            function speakText(){
+                var text = document.getElementById('txt').value;
+                responsiveVoice.speak(text);
+                
+            }
+        </script>
+    </body>
+</html>
